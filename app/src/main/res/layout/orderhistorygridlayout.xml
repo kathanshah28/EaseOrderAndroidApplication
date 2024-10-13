@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        android:id="@+id/OrderHistoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4,5,6">
+
+        <TableRow>
+
+            <TextView android:id="@+id/itemImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="Item"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView android:id="@+id/itemtitle"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:text="Title"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView android:id="@+id/itemPrice"
+                android:text="Price"
+                android:textSize="20dp"
+                android:layout_width="45dp"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView android:id="@+id/itemQuantity"
+                android:text="Quantity"
+                android:textSize="20dp"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView android:id="@+id/itemTotal"
+                android:text="Total"
+                android:textSize="20dp"
+                android:layout_width="35dp"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView android:id="@+id/itemStatus"
+                android:text="Status"
+                android:textSize="20dp"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/OrderHistoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

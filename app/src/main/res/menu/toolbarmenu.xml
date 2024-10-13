@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Login"
+        android:icon="@drawable/login_signup"
+        android:visible="true"
+        android:title="Login"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/OrderHistory"
+        android:icon="@drawable/orderhistory"
+        android:title="OrderHistory"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/Cart"
+        android:icon="@drawable/cart"
+        android:title="Cart"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/DarkMode"
+        android:icon="@drawable/baseline_dark_mode_24"
+        android:title="DarkMode"
+        app:showAsAction="ifRoom"/>
+
+</menu>

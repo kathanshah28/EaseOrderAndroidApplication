@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items In Your Cart"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TableLayout
+            android:id="@+id/OrderHistoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3,4,5,6">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView android:id="@+id/itemImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:text="Item"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+                <TextView android:id="@+id/itemtitle"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+                <TextView android:id="@+id/itemPrice"
+                    android:text="Price"
+                    android:textSize="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+                <TextView android:id="@+id/itemQuantity"
+                    android:text="Quantity"
+                    android:textSize="20dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+                <TextView android:id="@+id/itemTotal"
+                    android:text="Total"
+                    android:textSize="20dp"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+                <TextView android:id="@+id/itemRemove"
+                    android:text="Remove"
+                    android:textSize="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>
