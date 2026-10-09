@@ -82,14 +82,14 @@ Before running the project, make sure you have:
 
 ## Setup Instructions
 
-### 1. Clone the repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/kathanshah28/EaseOrderAndroidApplication.git
 ```
-### 2. Open the project in Android Studio.
-### 3. Let Gradle sync the project dependencies.
-### 4. Ensure the required Android SDK packages are installed.
-### 5. Run the app on an emulator or a physical Android device.
+2. Open the project in Android Studio.
+3. Let Gradle sync the project dependencies.
+4. Ensure the required Android SDK packages are installed.
+5. Run the app on an emulator or a physical Android device.
 
 ## API Integration
 
